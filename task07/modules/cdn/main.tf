@@ -25,7 +25,7 @@ resource "azurerm_cdn_frontdoor_origin_group" "cdn_og" {
     # Blob Storage (https://<account>.blob.core.windows.net/), Azure Storage очікує обов'язковий query-параметр
     # для REST API (наприклад, ?comp=list), щоб показати список контейнерів.
     # Оскільки Front Door робить чистий запит без параметрів, Storage Account повертає помилку 400 Bad Request
-    path         = "/mycontainer/blob.txt"
+    path         = "/blob.txt"
     protocol     = "Https"
     request_type = "HEAD"
   }
