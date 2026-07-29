@@ -55,6 +55,7 @@ resource "azurerm_cdn_frontdoor_route" "cdn_route" {
   ]
   # try for test
   cdn_frontdoor_custom_domain_ids = []
+  cdn_frontdoor_origin_path       = "/"
 
   # wait for other resource to be created
   depends_on = [

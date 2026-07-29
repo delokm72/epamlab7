@@ -1,14 +1,14 @@
 variable "location" {
   description = "..."
-  type = string
+  type        = string
 }
 
 variable "resource_group_name" {
   description = "..."
-  type = string
+  type        = string
 }
 
 variable "storage_account_name" {
   description = "..."
-  type = string
+  type        = string
 }

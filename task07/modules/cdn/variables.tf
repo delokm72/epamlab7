@@ -1,30 +1,30 @@
 variable "blob_hostname" {
   description = "..."
-  type = string
+  type        = string
 }
 
 variable "location" {
   description = "..."
-  type = string
+  type        = string
 }
 
 variable "resource_group_name" {
   description = "..."
-  type = string
+  type        = string
 }
 
 variable "profile_name" {
   description = "..."
-  type = string
+  type        = string
 }
 
 variable "endpoint_name" {
   description = "..."
-  type = string
+  type        = string
 }
 
 variable "origin_group_name" {
-  type = string
+  type        = string
   description = "..."
 }
 
