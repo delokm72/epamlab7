@@ -33,7 +33,7 @@ resource "azurerm_cdn_frontdoor_origin_group" "cdn_og" {
 
 resource "azurerm_cdn_frontdoor_origin" "cdn_origin" {
   cdn_frontdoor_origin_group_id  = azurerm_cdn_frontdoor_origin_group.cdn_og.id
-  certificate_name_check_enabled = false
+  certificate_name_check_enabled = true
   enabled                        = true
   host_name                      = var.blob_hostname
   origin_host_header             = var.blob_hostname
@@ -53,6 +53,9 @@ resource "azurerm_cdn_frontdoor_route" "cdn_route" {
     "Http",
     "Https"
   ]
+  # try for test
+  cdn_frontdoor_custom_domain_ids = []
+
   # wait for other resource to be created
   depends_on = [
     azurerm_cdn_frontdoor_origin.cdn_origin

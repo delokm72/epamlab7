@@ -16,6 +16,10 @@ resource "azurerm_storage_account" "sa" {
   resource_group_name              = azurerm_resource_group.rg.name
   allow_nested_items_to_be_public  = false
   cross_tenant_replication_enabled = false
+  #try for test
+  network_rules {
+    default_action = "Allow"
+  }
 }
 
 import {

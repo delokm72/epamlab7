@@ -1,4 +1,4 @@
-output "endpoint_host_name" {
-  description = "..."
+output "endpoint_hostname" {
+  description = "Azure CDN Front Door Endpoint Hostname"
   value       = module.cdn.hostname
 }
